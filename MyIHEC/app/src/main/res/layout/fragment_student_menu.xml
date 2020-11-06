@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StudentMenuFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--slider -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true">
+
+                        </androidx.viewpager.widget.ViewPager>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!-- send msg
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:backgroundTint="#283593"
+                        android:src="@drawable/edit_msg"
+                        android:tint="#FFFFFF" />
+
+                </LinearLayout>
+                -->
+
+
+                <!--  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="240dp"
+                      android:background="@drawable/ic_launcher_background"
+                      android:gravity="bottom"
+                      android:text="SPORT DASHBOARD"
+                      android:textColor="@color/colorPrimaryDark"
+                      android:textSize="24sp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                      android:id="@+id/fab"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom|end"
+                      android:backgroundTint="#283593"
+                      android:src="@drawable/edit_msg"
+                      android:tint="#FFFFFF" />
+                      -->
+
+
+                <!-- First Row-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_news"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_red_light"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/actualite" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/holo_red_dark"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp"
+                            android:text="Actualites"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_emploi"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_blue_bright"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/schedule" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/holo_blue_dark"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp"
+                            android:text="Emploi du temps"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!-- End Second Row-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/layout_discipline"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorYellowLight"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/presence" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorYellowDark"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp"
+                            android:text="Discipline"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_result"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/hat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/holo_orange_dark"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp"
+                            android:text="Résultats"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Second Row-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_event"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_green_light"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/club" />
+                        1
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/holo_green_dark"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp"
+                            android:text="Evenements"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <!-- End Second Row-->
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
